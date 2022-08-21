@@ -1,0 +1,17 @@
+{{>header}}
+{{>navbar}}
+{{#unless data}}
+
+<div class="alert alert-danger">
+    data not found
+</div>
+
+{{else}}
+
+<li>{{data._id}}</li>
+<li>{{data.title}}</li>
+<li>{{data.content}}</li>
+
+
+{{/unless}}
+{{>footer}}
